@@ -5,6 +5,18 @@
 
 using namespace Rcpp;
 
+// getCorMat
+NumericMatrix getCorMat(NumericMatrix x, NumericVector rho);
+RcppExport SEXP _bcgpRcpp_getCorMat(SEXP xSEXP, SEXP rhoSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type x(xSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type rho(rhoSEXP);
+    rcpp_result_gen = Rcpp::wrap(getCorMat(x, rho));
+    return rcpp_result_gen;
+END_RCPP
+}
 // rcpp_hello_world
 List rcpp_hello_world();
 RcppExport SEXP _bcgpRcpp_rcpp_hello_world() {
@@ -17,6 +29,7 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_bcgpRcpp_getCorMat", (DL_FUNC) &_bcgpRcpp_getCorMat, 2},
     {"_bcgpRcpp_rcpp_hello_world", (DL_FUNC) &_bcgpRcpp_rcpp_hello_world, 0},
     {NULL, NULL, 0}
 };
