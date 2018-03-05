@@ -6,7 +6,9 @@ Date: 2018-03-03
 Authors@R: as.person(c(
     "Casey Davis <cbdavis33@gmail.com> [aut, cre]"
   ))
-Description: This package implements the work in "A Bayesian Approach to Prediction and Variable Selection Using Non-Stationary Composite Gaussian Processes".
+Description: This package implements the work in "A Bayesian Approach to 
+    Prediction and Variable Selection Using Non-Stationary Composite 
+    Gaussian Processes".
 License: GPL (>= 2)
 Imports: Rcpp (>= 0.12.12)
 LinkingTo: Rcpp

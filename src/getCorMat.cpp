@@ -2,6 +2,20 @@
 #include <math.h>
 using namespace Rcpp;
 
+//' Create a correlation matrix
+//' 
+//' \code{getCorMat} returns a correlation matrix
+//' 
+//' @param x An \emph{n x d} matrix.
+//' @param rho A vector of length d
+//' @return An \emph{n x n} correlation matrix
+//' @examples
+//' n <- 10
+//' d <- 2
+//' x <- matrix(runif(n * d), ncol = d, nrow = n)
+//' rho <- runif(d, 0, 1)
+//' getCorMat(x, rho)
+//' @export
 // [[Rcpp::export]]
 NumericMatrix getCorMat(NumericMatrix x, NumericVector rho) {
   int i, j, k;

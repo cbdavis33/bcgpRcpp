@@ -3,24 +3,24 @@
 \alias{bcgpRcpp}
 \docType{package}
 \title{
-  A short title line describing what the package does
+  Bayesian Composite Gaussian Processes
 }
 \description{
-  A more detailed description of what the package does. A length
-  of about one to five lines is recommended.
+  This package implements the work in "A Bayesian Approach to 
+  Prediction and Variable Selection Using Non-Stationary Composite 
+  Gaussian Processes".
 }
 \details{
   This section should provide a more detailed overview of how to use the
   package, including the most important functions.
 }
 \author{
-Your Name, email optional.
+Casey Davis
 
-Maintainer: Your Name <your@email.com>
+Maintainer: Casey Davis <cbdavis33@gmail.com>
 }
 \references{
-  This optional section can contain literature or other references for
-  background information.
+  Reference a couple papers or my dissertation
 }
 \keyword{ package }
 \seealso{
