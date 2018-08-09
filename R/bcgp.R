@@ -20,7 +20,7 @@ bcgp <- function(trainingX, trainingY, ...){
   xTrain <- stdX(trainingX)
   yTrain <- scale(trainingY)
   
-  ## Do other stuff
+  ## Do other stuff. Lots of stuff
   
   output <- mcmc(xTrain, yTrain, ...) # Needs work
   
